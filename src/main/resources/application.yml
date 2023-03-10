@@ -1,16 +1,10 @@
 spring.application.name: auth
 spring.profiles.default: local
-spring.cloud.config.uri: http://cloud.sa.internal
-#security.basic.enabled: false
-security.user.name: user-name
-security.user.password: user-password
-security.oauth2.client.clientId: clientId
-security.oauth2.client.clientSecret: clientSecret
-security.oauth2.client.authorized-grant-types: authorization_code,refresh_token,password
-security.oauth2.client.scope: openid
+spring.mvc.pathmatch.matching-strategy: ant_path_matcher
+#spring.cloud.config.uri: http://cloud.sa.internal
 ---
 spring.config.activate.on-profile: local
-spring.config.import: configserver:http://localhost:8888
+#spring.config.import: configserver:http://localhost:8888
 ---
 spring.config.activate.on-profile: deveucentral1
-spring.config.import: configserver:http://cloud.sa.internal
+#spring.config.import: configserver:http://cloud.sa.internal

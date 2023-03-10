@@ -16,14 +16,8 @@ dependencies {
     implementation 'commons-io:commons-io:2.11.0'
     implementation 'io.springfox:springfox-swagger2:3.0.0'
     implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-security-oauth2'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-cache'
-    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
-    implementation "org.springframework.cloud:spring-cloud-starter-config:$springCloudConfigVersion"
-    implementation "org.springframework.cloud:spring-cloud-starter-bootstrap:$springCloudConfigVersion"
-    implementation 'org.zalando:spring-cloud-config-aws-kms:5.1.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
